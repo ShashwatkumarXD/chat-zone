@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 body {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/bg3.png");
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-position: center;
 }
+
+/* , url("/bg3.png") */
+
+
 
 /* dark mode looking scrollbar
 ::-webkit-scrollbar {
@@ -26,3 +30,29 @@ body {
 ::-webkit-scrollbar-thumb:hover {
 	background: #242424;
 } */
+
+.whitebg {
+  background-color: white;
+  width: 50vw; /* Half of the viewport width */
+  height: 100vh; /* Full viewport height */
+  position: absolute;
+  top: 0;
+  left: 0; /* Adjust this to right: 0 if you want it on the right side */
+}
+
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
