@@ -13,8 +13,8 @@ body {
 
 
 
-/* dark mode looking scrollbar
-::-webkit-scrollbar {
+/* dark mode looking scrollbar */
+/* ::-webkit-scrollbar {
 	width: 8px;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #242424;
+	background: #e63d3d;
 } */
 
 .whitebg {
@@ -45,7 +45,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .content {
@@ -55,4 +55,44 @@ body, html {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+}
+
+.whitebglanding{
+  background-color: white;
+  width: 100vw; /* Half of the viewport width */
+  /* height: 100vh; Full viewport height */
+  height: 100vh;
+  /* position: absolute; */
+  top: 0;
+  left: 0; /* Adjust this to right: 0 if you want it on the right side */
+}
+
+.particle-text {
+  position: relative;
+  font-size: 120px;
+  font-weight: bold;
+  color: transparent;
+  background-clip: text;
+  background-color: transparent;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.particle-text-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.particle-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }

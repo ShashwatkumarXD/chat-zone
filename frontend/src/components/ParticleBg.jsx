@@ -33,7 +33,7 @@ const ParticleBg = () => {
         type: "circle", // Shape of particles
       },
       opacity: {
-        value: 0.5, // Transparency of particles
+        value: 1, // Transparency of particles
       },
       size: {
         value: 3, // Size of particles
@@ -70,3 +70,4 @@ const ParticleBg = () => {
 };
 
 export default ParticleBg;
+

@@ -3,10 +3,15 @@ import { Link } from 'react-router-dom'
 import useLogin from '../../hooks/useLogin';
 import '/PROJECTS/MME/NEW/frontend/src/index.css';
 import ParticleBg from '../../components/ParticleBg';
+// import { useNavigate } from 'react-router-dom';
+
+
 const Login = () => {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  // const navigate = useNavigate();
 
   const { loading, login } = useLogin()
 
@@ -20,7 +25,7 @@ const Login = () => {
       {/* <div className='whitebg'>
         <p>Welcome to chatzone!</p>
       </div> */}
-      
+
       {/* 'text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 drop-shadow-md tracking-wide' */}
       <div className='whitebg flex justify-center items-center h-screen'>
         <p className='text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 drop-shadow-md tracking-wide'>
@@ -72,6 +77,18 @@ const Login = () => {
                 </button>
               </div>
             </form>
+
+            {/* landing page redirect */}
+            {/* <button
+              onClick={() => navigate('/')}
+              className='btn btn-block btn-sm mt-2 bg-green-600 border-none rounded-full' >
+              Go Back to Landing Page
+            </button> */}
+
+            <Link to='/' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>
+                 Back to Home!
+            </Link>
+
           </div>
         </div>
       </div>
