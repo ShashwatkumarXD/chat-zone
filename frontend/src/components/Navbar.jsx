@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='shadow-[0_0.1px_3px_0_rgba(0,0,0,1)]'>
+    <div className='fixed top-0 left-0 w-full shadow-[0_0.1px_3px_0_rgba(0,0,0,1)]'>
       <div className="navbar bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 h-20">
         <div className="navbar-start p-0 w-[50px]">
           <div className="dropdown">
